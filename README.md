@@ -27,6 +27,11 @@ httpx -list sitemap.txt -follow-redirects -status-code
 httpx -list sitemap.txt -match-code 301 -status-code
 ```
 
+### List status code from a single URL and injecting a custom header
+```sh
+httpx -u https://yoursite.com -status-ode -header x-robot-tag:httpx-robot
+```
+
 ## `httpx` manual / help
 
 ```
