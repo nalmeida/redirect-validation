@@ -37,6 +37,13 @@ httpx -list sitemap.txt -follow-redirects -sc -delay 1s -stream
 httpx -u https://yoursite.com -status-code -header x-robot-tag:httpx-robot
 ```
 
+## Useful commands
+
+### Line count of a file
+```sh
+wc -l < sitemap.txt
+```
+
 ## `httpx` manual / help
 
 ```
