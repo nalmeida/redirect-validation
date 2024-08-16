@@ -37,6 +37,11 @@ httpx -list sitemap.txt -follow-redirects -sc -delay 1s -stream
 httpx -u https://yoursite.com -status-code -header x-robot-tag:httpx-robot
 ```
 
+### List status code from a single URL and injecting a custom Cookie Header
+```sh
+httpx -u https://yoursite.com  -status-code -header "Cookie: x_test=test;"
+```
+
 ## Useful commands
 
 ### Line count of a file
